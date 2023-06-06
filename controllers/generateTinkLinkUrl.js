@@ -45,7 +45,7 @@ export const generatePaymentRequestId = async (access_token) => {
         "amount": {
             "currencyCode": "GBP",
             "value": {
-            "scale": "1",
+            "scale": "0",
             "unscaledValue": "1"
             }
         },
