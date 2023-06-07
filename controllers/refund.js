@@ -75,7 +75,7 @@ export const refundRequest = async (access_token, transaction_id) => {
     "amount": {
         "currencyCode": "GBP",
         "value": {
-        "scale": "1",
+        "scale": "0",
         "unscaledValue": "1"
         }
     },
