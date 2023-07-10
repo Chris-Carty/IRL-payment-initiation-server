@@ -17,9 +17,9 @@ app.use("/refund", refund);
 
 
 app.get("/", (req, res) => {
-  res.json("welcome to Percy's Piggy Bank server");
+  res.json("welcome to Tink payment initiation demo server");
 });
 
 app.listen(port, () => {
-  console.log(`Piggy bank server listening on port ${port}`);
+  console.log(`Tink demo server listening on port ${port}`);
 });
