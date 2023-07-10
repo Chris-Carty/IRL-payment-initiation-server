@@ -86,7 +86,7 @@ export const generateTinkLinkUrl = async (req, res) => {
 
         const payment_id = generatePaymentRequestId(result)
         payment_id.then(function(id){
-            const tinkLinkUrl = `https://link.tink.com/1.0/pay/?client_id=2ff04e23663c4e009214e5917dd4022e&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fcallback&market=GB&locale=en_US&payment_request_id=${id}`
+            const tinkLinkUrl = `https://link.tink.com/1.0/pay/?client_id=2ff04e23663c4e009214e5917dd4022e&redirect_uri=https://console.tink.com/callback&market=GB&locale=en_US&payment_request_id=${id}`
             res.status(200).json({
                   url: tinkLinkUrl,
                 });
